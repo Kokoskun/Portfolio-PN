@@ -1,0 +1,84 @@
+<div id="About" class="col-md-12" style="padding-top:2em;">
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
+		<div class="col-md-4" style="background:#e8ebed;">
+			<div class="col-md-12">
+				<img style="width: 100%;margin:auto;margin-top:1.8em;margin-bottom:0.8em;" src="assets/images/about-me-photo.jpg">
+			</div>
+			<p class="text-center" style="font-size:0.8em;">
+			<i>{{infoUser}}</i><br>
+			<a href="assets/documents/Resume_PATIPAN_NAKARIN.pdf" target="_blank">Resume Click</a></p>
+		</div>
+		<div class="col-md-8">
+			<h3 class="text-center" style="margin-bottom:0.5em;">
+				<i class="fa fa-id-badge" aria-hidden="true"></i> <b>About</b>
+			</h3>
+			<div class="col-md-12">
+				<div class="col-md-6">
+					<p class="text-center"><b>First Name:</b> {{textFirstName}}</p>
+				</div>
+				<div class="col-md-6">
+					<p class="text-center"><b>Last Name:</b> {{textLastName}}</p>
+				</div>
+			</div>
+			<div class="col-md-12" style="margin-top:-0.5em;">
+				<div class="col-md-1"></div>
+				<div class="col-md-5">
+					<p class="text-center"><b>Nickname:</b> {{textNickname}}</p>
+				</div>
+				<div class="col-md-5">
+					<p class="text-center"><b>Gender:</b> {{textGender}}</p>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+			<div class="col-md-12" style="margin-top:-0.5em;">
+				<div class="col-md-6">
+					<p class="text-center"><b>Birth Date:</b> {{textBirthMonth}} {{valueBirthDate}}</p>
+				</div>
+				<div class="col-md-6">
+					<p class="text-center"><b>Birth Year:</b> {{valueBirthYear}}</p>
+				</div>
+			</div>
+			<div class="col-md-12" style="margin-top:-0.5em;">
+					<p class="text-center" *ngIf="isTimeService"><b>Age:</b> <span *ngIf="myAge">{{myAge}} </span>Years <span *ngIf="beforeBirthMonth">{{beforeBirthMonth}} Month</span> <span *ngIf="beforeBirthDate">{{beforeBirthDate}} Days</span></p>
+			</div>
+			<div class="col-md-12" style="margin-top:-0.5em;">
+				<p class="text-center"><b>Languages:</b> {{textLanguages}}</p>
+			</div>
+			<div class="col-md-12" style="background:#e8ebed;padding-top:0.5em;">
+				<div class="col-md-3">
+					<img src="assets/images/logo_tu0.png" style="width:80%;margin-left:10%;margin-top:0.5em;">
+					<p class="text-center" style="font-size:0.8em;">{{yearFullHighSchool}}</p>
+				</div>
+				<div class="col-md-9">
+					<p class="text-center"><b>Senior High School</b></p>
+					<p class="text-center" style="margin-top:-0.5em;">{{nameHighSchool}}</p>
+					<p class="text-center" style="margin-top:-0.5em;font-size:0.9em;">{{majorHighSchool}}</p>
+				</div>
+			</div>
+			<div class="col-md-12" style="background:#e8ebed;padding-top:0.5em;margin-top:0.5em;">
+				<div class="col-md-3">
+					<img src="assets/images/logo_tu2.png" style="width:80%;margin-left:10%;margin-top:0.5em;">
+					<img src="assets/images/logo_tu1.png" style="width:80%;margin-left:10%;margin-top:0.5em;">
+					<p class="text-center" style="font-size:0.8em;">{{yearFullUniversity}}</p>
+				</div>
+				<div class="col-md-9">
+					<p class="text-center"><b>Higher Education</b></p>
+					<p class="text-center" style="margin-top:-0.5em;">{{nameUniversity}}</p>
+					<p class="text-center" style="margin-top:-0.5em;font-size:0.9em;">{{bachelorUniversity}}</p>
+					<p class="text-center" style="margin-top:-0.5em;font-size:0.9em;">{{concentrationUniversity}}</p>
+					<p class="text-center" style="margin-top:-0.5em;font-size:0.9em;"><span *ngIf="valueYearEducation">Year {{valueYearEducation}}</span> <span *ngIf="valueSemesterEducation">Semester {{valueSemesterEducation}}</span></p>
+				</div>
+			</div>
+			<div class="col-md-12" style="background:#d2d7db;">
+				<p class="text-center" style="font-size:0.8em;margin-top:1em;" *ngIf="valueSemesterEducation"><i>
+				<span> {{valueYearAgoEducation}} Year:</span> 
+				<span> {{valueMonthEducation}} Month:</span> 
+				<span> {{valueDayEducation}} Days:</span> 
+				<span> {{valueHoursEducation}} Hours:</span> 
+				<span> {{valueMinutesEducation}} Minutes </span>Ago</i> </p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-2"></div>
+</div>
